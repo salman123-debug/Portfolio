@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin:"https://portfolio-frontend-f5ri.onrender.com"}));
 
 app.post('/api/send-email',async(req,res)=>{
     const {name,email,message} = req.body;
