@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({origin:"https://portfolio-frontend-f5ri.onrender.com"}));
 
-app.post('https://portfolio-frontend-f5ri.onrender.com',async(req,res)=>{
+app.post('api/send-email',async(req,res)=>{
     const {name,email,message} = req.body;
 
     let transporter = nodemailer.createTransport({
