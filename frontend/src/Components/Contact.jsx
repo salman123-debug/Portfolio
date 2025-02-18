@@ -49,7 +49,7 @@ import {forwardRef} from 'react'
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-100"
-        style={{ backgroundImage: "url('./public/bg.jpg')" }}  // Replace with your image path
+        style={{ backgroundImage: "url('/bg.jpg')" }}  // Replace with your image path
         // style={{
           
         //     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f5f5f5'/%3E%3Ccircle cx='50' cy='50' r='40' fill='%23ff004f' fill-opacity='0.2'/%3E%3C/svg%3E")`,
