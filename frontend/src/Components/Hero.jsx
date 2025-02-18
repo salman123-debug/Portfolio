@@ -43,7 +43,7 @@ const Hero = forwardRef((props, ref) => {
   
   useEffect(() => {
     const typed = new Typed(typedElement.current, {
-      strings: ["Fullstack Developer", "Software Developer", "Python Developer"],
+      strings: ["Fullstack Developer", "Frontend Developer", "Backend Developer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,
@@ -51,7 +51,7 @@ const Hero = forwardRef((props, ref) => {
     });
 
     return () => {
-      typed.destroy(); // ✅ Cleanup on component unmount
+      typed.destroy(); //cleanup on component unmount
     };
   }, []);
 
