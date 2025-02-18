@@ -1,7 +1,7 @@
 import React, { forwardRef, useState } from "react";
 import "./Responsive.css";
 
-const FAQ=forwardRef((props, ref) => {
+const FAQ = forwardRef((props, ref) => {
   const faqs = [
     {
       question: "What services do you offer?",
@@ -44,21 +44,32 @@ const FAQ=forwardRef((props, ref) => {
           FAQ
         </span>
       </p>
-      <h1 className="text-4xl text-center font-bold font-serif mt-4">
+      <h1 className="text-3xl md:text-4xl text-center font-bold font-serif mt-4">
         Have some questions?
       </h1>
 
-      <div className="faqs flex flex-col md:flex-row h-[600px] items-center justify-center mt-8">
+      {/* Responsive FAQ Layout */}
+      <div className="faqs flex flex-col-reverse md:flex-row items-center justify-center mt-8 space-y-10 md:space-y-0 md:space-x-10">
+        
+        {/* FAQ Image */}
+        <div className="faq-image">
+          <img
+            src="faq.png"
+            alt="FAQ"
+            className="w-64 md:w-80 lg:w-96 h-auto rounded-lg mix-blend-multiply"
+          />
+        </div>
+
         {/* FAQ Section */}
         <div className="faq-section max-w-2xl w-full p-5">
-          <h2 className="text-3xl font-bold text-center mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             Frequently Asked Questions
           </h2>
-          <div className="space-y-4">
+          <div className="quest space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="faq-item border border-gray-300 rounded-md p-4 shadow-md transition-all duration-300"
+                className="faq-item border border-gray-300 rounded-lg p-4 shadow-md transition-all duration-300 bg-white"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
@@ -74,9 +85,11 @@ const FAQ=forwardRef((props, ref) => {
                   </span>
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? "max-h-40 mt-2" : "max-h-0"
-                  }`}
+                  className={`transition-all duration-500 ease-in-out ${
+                    openIndex === index
+                      ? "max-h-40 opacity-100 mt-2"
+                      : "max-h-0 opacity-0"
+                  } overflow-hidden`}
                 >
                   <p className="text-gray-600">{faq.answer}</p>
                 </div>
@@ -85,13 +98,9 @@ const FAQ=forwardRef((props, ref) => {
           </div>
         </div>
 
-        {/* FAQ Image */}
-        <div className="faq-image mt-8 md:mt-0  md:ml-10">
-          <img src="faq.png" alt="FAQ" className="w-72 md:w-96 h-auto rounded-lg  mix-blend-multiply" />
-        </div>
       </div>
     </div>
   );
-}
-)
+});
+
 export default FAQ;
