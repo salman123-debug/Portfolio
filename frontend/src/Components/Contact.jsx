@@ -30,7 +30,7 @@ import {forwardRef} from 'react'
     console.log(formData);
 
     try {
-      const resp = await axios.post('https://portfolio-backend-n9om.onrender.com', formData);
+      const resp = await axios.post('https://portfolio-backend-n9om.onrender.com/api/send-email', formData);
       console.log(resp);
       if(resp.data.success){
         setFormData({
