@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman Portfoliyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfoliyo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(49, 16, 78);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style-type: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(175, 137, 211);
+            font-size: 1.2rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+        .firstSection> div{
+            width: 30%;
+        }
+        .leftSection{
+            font-size: 3rem;
+            /* margin: 70px 0; */
+        }
+        .rightSection{
+            /* background-color: red; */
+           
+        }
+         .rightSection img{
+            width: 90%;
+             
+        }
+        .purple{
+            color: rgb(139, 74, 201);
+        }
+        #element{
+            color: rgb(163, 85, 236);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Salman's Portfolio</div>
+            <div class="right">
+                <ul>
+                   <li> <a href="#"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-address-card"></i>&nbsp;About </a></li>
+                    <li><a href="#"><i class="fa-brands fa-servicestack"></i>&nbsp;Services</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file"></i>Resume</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hii! My name is <span class="purple">Salman</span>
+                <div>And I am a Passonate </div>
+                <span id="element"></span>
+                <!-- <div>web developer</div> -->
+            </div>
+            <div class="rightSection">
+               <img src="web2.png">
+            </div>
+        </section>
+    </main>
+
+
+    <!-- //about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile-pic (3).png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>   
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident ipsum at dolor <br>deleniti quam maxime itaque velit doloribus similique tempora laudantium voluptate, <br>ex ea nesciunt soluta debitis culpa animi eos tempore nihil reiciendis sapiente officiis voluptatibus. Itaque nihil voluptatem mollitia corporis alias distinctio delectus iusto, nemo sit odit ratione at commodi quia esse id repellendus? Soluta iure possimus quos at nisi velit rerum minus cupiditate nemo! Ratione, corporis autem.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI</span><br>Designing web interface</li>
+                            <li><span>Front-end developer</span><br>Websites devlopment</li>
+                            <li><span>Wed devlopment</span><br>Web application devlopment</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High school</span><br>S M S I C Yashauli Prithvipur Ghazipur</li>
+                            <li><span>Intermediate</span><br>S M S I C Yashauli Prithvipur Ghazipur</li>
+                            <li><span>Diploma</span><br>Govt. Polytechnic Mawana Khurd Meerut</li>
+                        </ul>
+                    </div>
+                     
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end Desighn</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, atque?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web app Desighn</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, atque?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-object-ungroup"></i>
+                    <h2>Web Desighn</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, atque?</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpg" >
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vel repudiandae deleniti?</P>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg">
+                    <div class="layer">
+                        <h3>Online Examination System</h3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vel repudiandae deleniti?</P>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg">
+                    <div class="layer">
+                        <h3>Employee Management System</h3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vel repudiandae deleniti?</P>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contect Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>muhdsalman2510@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9369432689</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="file:///C:/Users/salman/Desktop/resume1.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; salman web developer</p>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Web developer</i>', '<i>Web Desighner</i>','<i>Front-end developer</i>','<i>Graphic desighner</i>'],
+      typeSpeed: 50,
+      loop:true,
+    });
+
+    // about
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+  </script>
+</body>
+</html>
