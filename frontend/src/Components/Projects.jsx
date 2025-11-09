@@ -52,18 +52,20 @@ const Projects = forwardRef((props, ref) => {
       description: "A platform to play tic tac toe game.",
       link:"https://weatherappmds.netlify.app/"
     },
-    // {
-    //   id: "tab7",
-    //   title: "Rock Paper Scissors Game",
-    //   img: "rock paper .jpg",
-    //   description: "A platform to play rock paper scissors game.",
-    // },
-  //   {
-  //     id: "tab8",
-  //     title: "Learning Management System",
-  //     img: "work7.jpg",
-  //     description: "An online education platform for managing courses and students.",
-  //   },
+    {
+      id: "tab7",
+      title: "Currency Converter",
+      img: "curr.jpg",
+      description: "A platform to change currency.",
+      link:"https://currencyconvertersal.netlify.app/"
+    },
+    {
+      id: "tab8",
+      title: "Passward Generator",
+      img: "pass.jpg",
+      description: "A platform to generate new passward each time.",
+      link:"https://passwordgeneratorsalman.netlify.app/"
+    },
   //   {
   //     id: "tab9",
   //     title: "Food Delivery App",
